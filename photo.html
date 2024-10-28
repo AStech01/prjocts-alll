@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  
+    <link rel="stylesheet" href="photo.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+  <header class="bg-white h-12">
+      <nav class="flex justify-between items-center w-[100%] mx-auto relative">
+        <div >
+                    <img class="w-40 mt-[10px]" src="./logo-default-176x28.png" alt="">
+        </div>
+        <div class="nav-links md:static md:min-h-fit absolute  bg-white min-h-[20vh] left-0 top-[-500px] md:w-auto w-full flex items-center px-5 z-20 ">
+          <ul class="flex md:flex-row flex-col md:items-center md:gap-4 gap-8 cursor-pointer  ">
+            <li><a class="hover:text-blue-600 " href="#">HOME</a></li>
+             <li><a class="hover:text-blue-600" href="#">ABOUT ME</a></li>
+              <li><a class="hover:text-blue-600" href="#">SERVICE</a></li>
+               <li><a class="hover:text-blue-600" href="#">CONTACTS</a></li>
+          </ul>
+        </div>
+        <div class="flex items-center gap-6 z-20">
+          <ion-icon onclick="onToggleMenu(this)" name="menu-outline" class="text-3xl cursor-pointer md:hidden"></ion-icon>
+        </div>
+      </nav>
+      </header>
+           <section class="w-full">
+            <div class="relative sm:flex w-full h-[300px] md:h-[600px]">
+                     <div class="relative w-full h-full">
+                      <img class="absolute inset-0 object-cover w-full h-full" src="./screens-1-1046x720.jpg" alt="Main Image">
+                      <img class="absolute inset-1 object-cover w-full h-full opacity-100 md:hidden lg:block" src="./back2.png" alt="Background Image">
+                      </div>
+                     <div class="absolute ml-0 md:-ml-20 lg:ml-0 right-0 top-0 mt-10 sm:mt-0 sm:static bg-white bg-opacity-50 md:bg-transparent  w-full flex items-center py-5 px-4 z-10 ">
+                      <div class="">
+                        <h3 class=" text-sm sm:text-xl md:text-2xl md:ml-44 text-orange-400">I'M MICHIEL RAICHEL</h3>
+                      
+                        <h2 class=" text-base sm:text-xl md:text-4xl lg:text-5xl xl:text-7xl  md:-ml-[20px]  font-bold mt-4 opacity-90 ">Photographer</h2>
+                        <h2 class="font-mono leading-5 md:-ml-[20px] md:text-4xl md:mt-4">& Proffessional</h2>
+                        <div class="mt-4 md:ml-44"><p class="md:text-xl lg:text-2xl" >Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p></div>
+                        <button class="uppercase rounded-lg bg-orange-400 mt-8 py-[4px] md:p-[20px] md:w-52 md:ml-44 ">View portfolio</button>
+                        </div>
+                     </div>
+              </div>       
+           </section>
+            
+           <section>
+            <div >
+                <div class="md:ml-[40%]  ml-[30%] py-20">
+                  <img class="absolute w-44 md:w-52 lg:w-60  xl:w-64   " src="./title-bg.png" alt="">
+                  <h4 class="text-3xl md:text-4xl lg:text-5xl xl:text-6xl relative mt-4 ml-[12px] font-bold">potfolio</h4></div>
+                <div class="flex flex-col gap-4 lg:flex-row px-5 ">
+                  <div class="flex flex-col md:flex-row lg:flex-col gap-4 w-full justify-center">
+
+                   <div class="po-01 relative flex flex-col gap-4">
+                    <img class="po-03 w-full md:w-[350px] lg:w-full" src="./im-01.avif" alt="">
+                   <div class="po-02 absolute top-0 left-0 w-full h-full flex flex-col py-24 md:py-16 lg:py-10 opacity-0 transition-opacity duration-300 xl:py-40">
+                   <h5 class="text-2xl uppercase text-white">Mary Kuriyan</h5>
+                    <p class="text-white text-xl mt-4">Lorem ipsum dolor, sit consectetur <br> adipisicing elit. Magnam dolorum doloresa</p>
+                   </div>
+                  </div>
+
+                    <!-- <div class="po-01 absolute mt-8 ">
+                    <h5 class="text-2xl">mary kuriyan</h5>
+                    <p>Lorem ipsum dolor, sit amet consectetur <br>  adipisicing elit. Quasi magnam dolorum doloresa</p>
+                    </div> -->
+
+                      <div class="po-01 relative">
+                       <img class="po-03 w-full md:w-[350px] lg:w-full" src="./im-02.avif" alt="">
+                       <div class="po-02 absolute top-0 left-0 py-24 md:py-16 lg:py-10 w-full h-full opacity-0 xl:py-40">
+                        <h5 class="text-2xl uppercase text-white">jennifer tiw</h5>
+                        <p class="text-white text-xl mt-4">Lorem ipsum dolor, sit consectetur <br> adipisicing elit. Magnam dolorum doloresa</p>
+                       </div>
+                      </div>
+                       
+                  
+                  </div>
+                  <div class="flex flex-col md:flex-row lg:flex-col gap-4 w-full justify-center">
+
+                   <div class="po-01 relative flex flex-col gap-4">
+                    <img class="po-03 w-full md:w-[350px] lg:w-full" src="./im-04.avif" alt="">
+                   <div class="po-02 absolute top-0 left-0 w-full h-full flex flex-col py-24 md:py-16 lg:py-10 opacity-0 transition-opacity duration-300 xl:py-40">
+                   <h5 class="text-2xl uppercase text-white">Mary Kuriyan</h5>
+                    <p class="text-white text-xl mt-4">Lorem ipsum dolor, sit consectetur <br> adipisicing elit. Magnam dolorum doloresa</p>
+                   </div>
+                  </div>
+
+                    <!-- <div class="po-01 absolute mt-8 ">
+                    <h5 class="text-2xl">mary kuriyan</h5>
+                    <p>Lorem ipsum dolor, sit amet consectetur <br>  adipisicing elit. Quasi magnam dolorum doloresa</p>
+                    </div> -->
+
+                      <div class="po-01 relative">
+                       <img class="po-03 w-full md:w-[350px] lg:w-full" src="./im-05.avif" alt="">
+                       <div class="po-02 absolute top-0 left-0 py-24 md:py-16 lg:py-10 w-full h-full opacity-0 xl:py-40">
+                        <h5 class="text-2xl uppercase text-white">jennifer tiw</h5>
+                        <p class="text-white text-xl mt-4">Lorem ipsum dolor, sit consectetur <br> adipisicing elit. Magnam dolorum doloresa</p>
+                       </div>
+                      </div>
+                       
+                  
+                  </div>
+                  <div class="flex flex-col md:flex-row lg:flex-col gap-4 w-full justify-center">
+
+                   <div class="po-01 relative flex flex-col gap-4">
+                    <img class="po-03 w-full md:w-[350px] lg:w-full" src="./im-03.avif" alt="">
+                   <div class="po-02 absolute top-0 left-0 w-full h-full flex flex-col py-24 md:py-16 lg:py-10 opacity-0 transition-opacity duration-300 xl:py-40">
+                   <h5 class="text-2xl uppercase text-white">Mary Kuriyan</h5>
+                    <p class="text-white text-xl mt-4">Lorem ipsum dolor, sit consectetur <br> adipisicing elit. Magnam dolorum doloresa</p>
+                   </div>
+                  </div>
+
+                    <!-- <div class="po-01 absolute mt-8 ">
+                    <h5 class="text-2xl">mary kuriyan</h5>
+                    <p>Lorem ipsum dolor, sit amet consectetur <br>  adipisicing elit. Quasi magnam dolorum doloresa</p>
+                    </div> -->
+
+                      <div class="po-01 relative">
+                       <img class="po-03 w-full md:w-[350px] lg:w-full" src="./im-02.avif" alt="">
+                       <div class="po-02 absolute top-0 left-0 py-24 md:py-16 lg:py-10 w-full h-full opacity-0 xl:py-40">
+                        <h5 class="text-2xl uppercase text-white">jennifer tiw</h5>
+                        <p class="text-white text-xl mt-4">Lorem ipsum dolor, sit consectetur <br> adipisicing elit. Magnam dolorum doloresa</p>
+                       </div>
+                      </div>
+                       
+                  
+                  </div>
+
+                  <!-- <div class="flex flex-col md:flex-row lg:flex-col gap-4 w-full justify-center">
+                <div  class="psi-01 relative  ">
+                  <div class="md:w-[350px] lg:w-full lg:h-[210px] xl:h-[510px]">
+                    <img class="psi-02 w-full md:w-[350px] lg:w-full lg:h-[210px] xl:h-[510px]" src="./im-06.avif" alt="">
+                  </div>
+                  <div class="psi-03 absolute top-0 left-0 py-24 md:py-16 lg:py-10 lg:w-20% lg:left-0 w-full h-[410px] lg:h-[210px] md:h-[255px] xl:h-[510px] xl:w-[770px] xl:py-40 md:left-0 opacity-0">
+                        <h5 class="text-2xl uppercase text-white">jennifer </h5>
+                    <p class="text-white text-xl mt-4">Lorem ipsum dolor, sit consectetur <br> adipisicing elit. Magnam dolorum doloresa</p>
+                  </div>
+                  </div>
+                  
+                <div  class="pet-01 relative">
+                 <img class=" w-full md:w-[350px] lg:w-full md:h-full" src="./im-04.avif" alt="">
+                <div class="pet-03 absolute top-0 left-0 py-24 w-full  lg:h-[210px] lg:w-20% lg:py-10 md:h-[255px] h-[375px] opacity-0 xl:h-[510px] xl:w-[770px] xl:py-40 ">
+                        <h5 class="text-2xl uppercase text-white">jennifer mockey</h5>
+                    <p class="text-white text-xl mt-4">Lorem ipsum dolor, sit consectetur <br> adipisicing elit. Magnam dolorum doloresa</p>
+                  </div>
+
+                 </div>
+                 </div> -->
+              
+                <!-- <div class="flex flex-col md:flex-row lg:flex-col gap-4 w-full justify-center">
+                  <div class="ps-01 relative ">
+                    <img class=" w-full md:w-[350px] lg:w-full" src="./im-05.avif" alt="">
+                   <div class="ps-03 absolute top-0 left-0 w-full h-[375px] flex flex-col py-24 md:py-16 md:h-[235px]  md:left-0 lg:py-10 lg:h-[210px] lg:left-0 xl:h-[510px] xl:py-40  opacity-0">
+                   <h5 class="text-2xl uppercase text-white">tim tomas</h5>
+                    <p class="text-white text-xl mt-4 ">Lorem ipsum dolor, sit consectetur <br> adipisicing elit. Magnam dolorum doloresa</p>
+                   </div>
+          </div>
+
+                    <div  class="ps-04 relative">
+                   <img class=" w-full md:w-[350px] lg:w-full"  src="./im-03.avif" alt="">
+                   <div class="ps-05 absolute top-0 left-0 w-full h-[375px] flex flex-col py-24 md:py-16 md:left-0 md:h-[235px] lg:py-10 lg:h-[210px] xl:h-[510px] xl:py-40   opacity-0  ">
+                   <h5 class="text-2xl uppercase text-white">Mary hohn</h5>
+                    <p class="text-white text-xl mt-4">Lorem ipsum dolor, sit consectetur <br> adipisicing elit. Magnam dolorum doloresa</p>
+                   </div>
+                   </div>
+
+
+
+                  
+                    
+
+                </div> -->
+
+            </div>
+               
+           </section>
+
+           <!-- section-2 -->
+            <div>
+              <div class="md:ml-[40%]  ml-[30%] py-20">
+                  <img class="absolute w-44 md:w-52 lg:w-60  xl:w-64  " src="./title-bg.png" alt="">
+                  <h4 class="text-3xl md:text-4xl  lg:text-5xl xl:text-6xl relative mt-4 ml-[12px] font-bold">About Me</h4></div>
+                  <p class="text-center first-letter:ml-8 first-letter:text-xl text-xl text-gray-500 md:ml-4  md:text-xl">Since 2008, I’ve been providing my clients with quality 
+                    photography and retouching services.  Some of my works were awarded on a national level.
+                    Below are some facts about me.</p>
+
+                    <div class="flex flex-col sm:flex-row justify-center  items-center w-full p-10  ">
+                      <div class="flex justify-between sm:justify-end w-full sm:w-1/2 sm:gap-3 ">
+                          <div class="">
+                      <i class="fa-solid  fa-award md:text-6xl text-4xl  ml-8"></i>
+                      <h5 class="md:text-5xl text-3xl md:mt-8 mt-4 ml-8 lg:text-5xl">22</h5>
+                      <h6 class="text-xl mt-4 md:text-2xl lg:text-2xl">photography awards</h6>
+                      </div>
+                        <div class="">
+                      <i class="fa-solid fa-camera md:text-6xl text-4xl pl-6"></i>
+                      <h5 class="md:text-5xl text-3xl md:mt-8 mt-4 ml-6 lg:text-5xl">766</h5>
+                      
+                      <h6 class="md:text-2xl text-xl mt-4  lg:text-2xl pl-5">photo shoots</h6>
+                      </div>
+                      </div>
+                      <div class="flex justify-between sm:justify-start w-full  sm:w-1/2 sm:gap-3 mt-4 md:mt-0 lg:mt-0 xl:mt-0 pl-4 ">
+                          <div class=" ">
+                      <i class="fa-solid fa-calendar-days md:text-6xl text-4xl ml-5"></i>
+                      <h5 class="md:text-5xl text-3xl md:mt-8 mt-4 ml-5 lg:text-5xl ">08</h5>
+                      <h6 class="text-xl mt-4  md:text-2xl lg:text-2xl ">Years of Experience</h6>
+                      </div>
+                        <div class=" ">
+                     <i class="fa-brands fa-envira md:text-6xl text-4xl  pl-10"></i>
+                      <h5 class="md:text-5xl text-3xl md:mt-8 mt-4 ml-8 lg:text-5xl ">569</h5>
+                      
+                      <h6 class="text-xl mt-4 md:text-2xl pl-5  lg:text-2xl">Annual Clients</h6>
+                      </div>
+                      </div>
+                      
+                       
+                    </div>
+          
+            </div>
+
+             <!-- section--3 -->
+
+                   <div class="md:ml-[40%]  ml-[25%] py-20">
+                  <img class="absolute w-44 md:w-52 lg:w-60  xl:w-64  lg:ml-10 md:ml-10 " src="./title-bg.png" alt="">
+                  <h4 class="text-3xl md:text-4xl lg:text-5xl xl:text-6xl relative mt-4  ml-[12px] font-bold">Testimonials</h4>
+                </div>
+
+                  <!-- <div class="slideshow-container">
+                    <div class="item flex  w-[50%]  ml-[25%] ">
+                    <div class="item"><img class="rounded-full" src="./pic-01.avif" alt=""></div>
+                    <div class="item"><img class="rounded-full" src="./pic-02.avif" alt=""></div>
+                    
+                    <div class="item"><img class="rounded-full" src="./pic-04.avif" alt=""></div>
+                   
+                    <div class="item"><img class="rounded-full" src="./pic-06.avif" alt=""></div>
+                    <div class="item"><img class="rounded-full" src="./pic-10.avif" alt=""></div>
+                    <div class="item"><img class="rounded-full" src="./pic-09.avif" alt=""></div>
+                   
+                   
+                  </div>
+                  <div class="button  ">
+          <button class="prev text-2xl"><i class="fa-solid fa-arrow-right"></i></button>
+          <button class="next text-2xl"><i class="fa-solid fa-arrow-left"></i></button>
+         </div>
+                  </div> -->
+                      
+                  <div class="slider-container">
+            <div class="slider">
+                <img src="./pic-03.avif" class="slide"/>
+                
+                <img src="./pic-04.avif" class="slide"/>
+                <img src="./pic-05.avif" class="slide"/>
+                <img src="./pic-06.avif" class="slide"/>
+                <img src="./pic-07.avif" class="slide"/>
+                <img src="./pic-08.avif" class="slide"/>
+                <img src="./pic-10.avif" class="slide"/>
+                <!-- <div class="slide"><span>6</span></div>
+                <div class="slide"><span>7</span></div>
+                <div class="slide"><span>1</span></div>
+                <div class="slide"><span>2</span></div>
+                <div class="slide"><span>3</span></div>
+                <div class="slide"><span>4</span></div> -->
+            </div>
+            <div class="slider-buttons">
+                <button id="prev-slide" aria-label="Previous Slide" title="Go To Previous Slide"></button>
+                <button id="nxt-slide" aria-label="Next Slide" title="Go To Next Slide"></button>
+            </div>
+        </div>
+
+             <div class="flex justify-center relative my-20">
+                  <img class="absolute w-52 md:w-52 lg:w-60  xl:w-64 -mt-4 " src="./title-bg.png" alt="">
+                  <h4 class="text-center text-3xl md:text-4xl lg:text-5xl xl:text-6xl z-10 font-bold">Frequently Asked Questions</h4>
+                </div>
+
+                  <div class="main-box flex lg:flex-row flex-col lg:px-16 justify-center gap-10 ">
+                    <div class="left w-full lg:w-1/2 lg:ml-0  px-10">
+                      <div class="border-y-2 py-4">
+                      <div class="box-1 flex items-start gap-5 ">
+                       <button id="box-btn" > <i class="fa-regular fa-square-plus text-3xl"></i></button>
+                        <h6 class=" text-xl md:text-2xl ">Do you provide any scripts with your templates?</h6>
+                      </div>
+                        <div id="panel" class="box-001   pl-10  mt-8 hidden">
+                        <p class="text-xl  ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam doloremque 
+                          rem sit molestiae! Quisquam aperiam ut nemo hic. Molestiae mollitia distinctio 
+                          repudiandae soluta odit veritatis nihil tenetur asperiores natus molestias!</p>
+                        </div>
+                        </div>
+                      <div class="border-y-2 py-4">
+                      <div class="box-1 flex items-start gap-5 ">
+                       <button id="box-btne" > <i class="fa-regular fa-square-plus text-3xl"></i></button>
+                        <h6 class=" text-xl md:text-2xl ">Do you provide any scripts with your templates?</h6>
+                      </div>
+                        <div id="panele" class="box-001   pl-10  mt-8 hidden">
+                        <p class="text-xl  ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam doloremque 
+                          rem sit molestiae! Quisquam aperiam ut nemo hic. Molestiae mollitia distinctio 
+                          repudiandae soluta odit veritatis nihil tenetur asperiores natus molestias!</p>
+                        </div>
+                        </div>
+                      <div class="border-y-2 py-4">
+                      <div class="box-1 flex items-start gap-5 ">
+                       <button id="box-btnu" > <i class="fa-regular fa-square-plus text-3xl"></i></button>
+                        <h6 class=" text-xl md:text-2xl ">Do you provide any scripts with your templates?</h6>
+                      </div>
+                        <div id="panelu" class="box-001   pl-10  mt-8 hidden">
+                        <p class="text-xl  ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam doloremque 
+                          rem sit molestiae! Quisquam aperiam ut nemo hic. Molestiae mollitia distinctio 
+                          repudiandae soluta odit veritatis nihil tenetur asperiores natus molestias!</p>
+                        </div>
+                        </div>
+                      <div class="border-y-2 py-4">
+                      <div class="box-1 flex items-start gap-5 ">
+                       <button id="box-bt" > <i class="fa-regular fa-square-plus text-3xl"></i></button>
+                        <h6 class=" text-xl md:text-2xl ">Do you provide any scripts with your templates?</h6>
+                      </div>
+                        <div id="pan" class="box-001   pl-10  mt-8 hidden">
+                        <p class="text-xl  ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam doloremque 
+                          rem sit molestiae! Quisquam aperiam ut nemo hic. Molestiae mollitia distinctio 
+                          repudiandae soluta odit veritatis nihil tenetur asperiores natus molestias!</p>
+                        </div>
+                        </div>
+                         
+                    </div>
+                    <div class="right w-full lg:w-1/2 px-10 ">
+                      <div class="right-01 lg:mt-0 mt-16">
+                        <h6 class="right-h text-3xl flex justify-between ">photography <span class="">90%</span></h6>
+                        <hr class="ri-h">
+
+                      </div>
+                       <div class="right-01 lg:mt-0 mt-16">
+                        <h6 class="right-h text-3xl flex justify-between ">photography <span class="">90%</span></h6>
+                        <hr class="ri-h">
+
+                      </div>
+                       <div class="right-01 lg:mt-0 mt-16">
+                        <h6 class="right-h text-3xl flex justify-between ">photography <span class="">90%</span></h6>
+                        <hr class="ri-h">
+
+                      </div>
+                       <div class="right-01 lg:mt-0 mt-16">
+                        <h6 class="right-h text-3xl flex justify-between ">photography <span class="">90%</span></h6>
+                        <hr class="ri-h">
+
+                      </div>
+                    </div>
+                  </div> 
+
+                  <div class="my-20 w-full bg-gray-700 flex justify-center items-center">
+                    <div class="flex md:flex-row flex-col gap-3 my-10 items-center justify-center">
+                      <h3 class="text-white text-2xl font-bold text-center">Looking for <span class="italic">Quality Photography?</span> </h3>
+                      <button class="py-4 px-7 rounded-lg bg-green-400 text-2xl text-center font-bold">get in touch</button>
+                    </div>
+                  </div>
+
+                   <div class="flex justify-center relative my-20">
+                  <img class="absolute w-52 md:w-52 lg:w-60  xl:w-64 -mt-4  " src="./title-bg.png" alt="">
+                  <h4 class="text-center text-3xl md:text-4xl lg:text-5xl xl:text-6xl z-10 font-bold">Latest Blog Posts</h4>
+                </div>
+
+                  <div class="flex items-center flex-wrap gap-10 lg:justify-evenly pt-16 mx-auto px-10 md:px-10">
+                    <div class="w-[600px] h-[600px] mx-auto sm:mx-0">
+                      <img src="./im-02.avif" alt="">
+                      <div class="pt-5">
+                        <h6 class="flex justify-between text-4xl text-yellow-600 ">News <span class="text-3xl text-gray-800" >Apr 21, 2019 at 12:05 pm</span></h6>
+                       <div> <p class="text-4xl mt-4 ">Top 10 Essential Photography Tips for Beginners</p></div>
+                        
+                      </div>
+                    </div>
+                    <div class="w-[600px] h-[600px]  mx-auto sm:mx-0">
+                      <img src="./im-01.avif" alt="">
+                        <div class="pt-5">
+                        <h6 class="flex justify-between text-4xl text-red-600">Innovation <span class="text-3xl text-gray-800">Apr 21, 2019 at 12:05 pm</span></h6>
+                        <p class="text-4xl mt-4">Benefits of Using Drones in Aerial Photography</p>
+                        
+                      </div>
+                    </div>
+                    <div class="w-[600px] h-[600px]  mx-auto sm:mx-0">
+                      <img src="./im-02.avif" alt="">
+                        <div class="pt-5">
+                        <h6 class="flex justify-between text-4xl text-green-600">Tips <span class="text-3xl text-gray-800">Apr 21, 2019 at 12:05 pm</span></h6>
+                        <p class="text-4xl mt-4">5 Ways to Get Great Photos Outside of the Studio</p>
+                        
+                      </div>
+                  </div>
+                  </div>
+                  <div class="mt-8 bg-blue-500 lg:w-full">
+                    <img  src="./foreground-03-1600x310.png" alt="">
+                  </div>
+
+                  <div class=" ">
+                   <div class="flex items-center lg:justify-evenly flex-wrap py-40 bg-slate-800  pt-16 mx-auto px-10 md:px-10">
+                    <div class="w-[600px] h-[300px] ">
+                      <h5 class="text-white text-5xl">About me</h5>
+                      <p class="text-zinc-400 pt-8 md:text-3xl text-xl">My name is Jonathan Davis and I’m professional photographer and
+                         retoucher. I’m offering my services to individual and 
+                        corporate clients throughout the USA. Make your favorite 
+                        life moment or event last and remain in your memory!</p>
+                    </div>
+                    <div class="w-[600px] h-[300px] pt-10 ">
+                      <h5 class="text-white text-5xl">Contact Information</h5>
+                        <div class="pt-12  flex  ">
+                      <i class="fa-solid fa-location-dot text-white text-3xl"></i>
+                         <h6 class="text-zinc-400 md:text-2xl text-xl ml-4">4239 Lapeer Rd, Port Hurons</h6></div>
+                      <div class=" mt-8  flex">
+                        <i class="fa-solid fa-phone-flip text-white text-3xl"></i>
+                      <h6 class="text-zinc-400 md:text-2xl text-xl ml-4"> +1 (800) 478-42-51</h6>
+                    </div>
+                    <div class=" mt-8  flex">
+                        <i class="fa-regular fa-envelope text-white text-3xl"></i>
+                      <h6 class="text-zinc-400 md:text-2xl text-xl ml-4">info@demolink.org</h6>
+                    </div>
+                    </div>
+                    <div class="w-[600px] h-[300px] md:pt-10 pt-16">
+                      <h5 class="text-white text-5xl">Newsletter</h5>
+                      <p class="text-zinc-400 pt-8 md:text-3xl text-xl">My name is Jonathan Davis and I’m professional photographer and
+                         retoucher. I’m offering my services to individual and 
+                        corporate </p>
+                        <div  class="pt-6 ">
+                        <input class="p-5 md:w-96 rounded-lg md:text-2xl text-xl" type="text" name="" id="">
+                       <i class="fa-regular fa-envelope py-4 px-7  rounded-lg bg-yellow-400 text-3xl text-center font-bold</i>"></i> get in touch</div>
+                     
+                    </div>
+                    </div>
+                    </div>
+
+                  
+
+
+  
+  
+
+          
+
+                  
+                  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+      <script src="photo.js"></script>
+
+<!-- <script>
+  $(document).ready(function() {
+    $("#box-btn").click(function() {
+      $("#panel").slideToggle("slow");
+    });
+  });
+</script> -->
+</body>
+</html>
